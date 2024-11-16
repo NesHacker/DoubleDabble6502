@@ -115,6 +115,7 @@ next_digit:
   lda #$43
   sta PPU_ADDR
   ldx #1
+  ; Print the digits using each BCD digit as an offset to the pattern table
 print_loop:
   lda $00, x
   clc
